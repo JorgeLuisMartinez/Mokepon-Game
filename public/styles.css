@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,200;1,800&display=swap');
+
+body{
+    background-color: #FF8B13;
+    font-family: 'Tourney', cursive;
+}
+#seleccionar-mascota{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: #205E61;
+    font-size: 44px;
+    font-weight: 500;
+}
+.subtitulo{
+    color: white;
+    font-size: 24px;
+}
+.tarjetas, .botones-ataque{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.tarjeta-de-mokepon{
+    width: 150px;
+    height: 150px;
+    background-color: #ECECEC;
+    padding: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img{
+    width: 92px;
+}
+#boton-mascota{
+    width: 125px;
+    height: 43px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #ECECEC;
+    color: white;
+    font-family: 'Tourney', cursive;
+    margin-top: 25px;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    border: 6px solid #16FF00;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+.boton-ataque{
+    background-color: #ECECEC;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    margin: 15px;
+    border: 1px solid #205E61;
+    box-sizing: border-box;
+}
+#mensajes {
+    width: 232px;
+    height: 118px;
+    border-radius: 19px;
+    border: 3px solid #555;
+    background: #428bca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#boton-reiniciar{
+    width: 89px;
+    height: 27px;
+    color: #205E61;
+    border-radius: 15px;
+    background-color: #FF8B13;
+    border: 1px solid #555;
+}
+.cosas-jugador{
+    margin-top: 10px;
+    display: grid;
+    text-align: center;
+    font-weight: bold;
+    color: #205E61;
+    grid-template-columns: 100px 100px;
+    border: 1px dashed #205E61;
+}
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+}
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa h2{
+    font-weight: 600;
+}
+#ver-mapa button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid #ECECEC;
+    color: white;
+    font-family: 'Tourney', cursive;
+    margin: 8px 3px;
+}
+  
+#mapa{
+    border: 2px solid white;
+}
+/* HASTA ESE TAMAÑO DE P PANTALLA VA A SUCEDER LO QUE VA DENTRO DE MEDIA QUERY   */
+@media (max-width:560px){
+    .tarjetas, .botones-ataque{
+        flex-direction: column;
+    }
+    #seleccionar-mascota{
+        height: 150vh;
+    }
+    
+}
+@media (max-width:360px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+
